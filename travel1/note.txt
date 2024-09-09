@@ -1,0 +1,70 @@
+create database book_db;
+
+-- Create table book_form
+CREATE TABLE book_form (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name varchar(255),
+    email varchar(255),
+    phone INT(10),
+    location varchar(255),
+    guests INI,
+    arrivals DATE,
+    leaving DATE,
+    address varchar(255),
+    price DECIMAL(10,2),
+    tatal_price DECIMAL(20)
+	
+);
+
+-- Create table amountspent
+CREATE TABLE amountspent (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name varchar(255),
+    amount DECIMAL(10, 2)
+       
+);
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "123";
+$dbname = "book_db";
+
+// Create Connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+//Check connection
+  if ($conn->connect_error) {
+   die("Connection faild: " .$conn->connect_error);
+}
+/*echo "Connected successfully";*/
+//close eka dann epa
+
+?>
+
+
+CREATE DATABASE db_con;
+
+CREATE TABLE user (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name varchar(255),
+    password DECIMAL(10, 2),
+    email varchar(255)
+       
+);
+
+<?php
+// Database configuration
+$servername = "localhost";
+$username = "root"; // Your MySQL username
+$password = "123"; // Your MySQL password
+$dbname = "db_con"; // Your MySQL database name
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>

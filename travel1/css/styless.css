@@ -1,0 +1,58 @@
+* {
+    font-family: "Times New Roman", Times, serif; 
+   }
+
+   p {
+       font-family: "Times New Roman", Times, serif; 
+   }
+
+   body { 
+       background-image: url("../image/bg2.jfif");
+       color: white;
+       
+    }
+
+#add {
+   
+    background-image: linear-gradient(rgb(255, 255, 3),rgb(165, 236, 12)); 
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 4px;
+    cursor: pointer;
+    width:70px;
+    height:5px;
+    border-radius: 50px;
+    box-shadow: 0 2px #999;
+    padding-top: 10px;
+    float: left;
+   }
+
+th{ 
+    font-family: Arial, Helvetica;
+    background-color: #102937;
+}
+
+td{
+    background-color: #124d54;
+    text-align: center;
+}
+
+#edit{
+    border:1px solid #f8BC24;
+    background-color: #f8BC24;
+    color: black;
+    
+}
+
+#del{
+    border:1px solid #f8BC24;
+    background-color: #f8BC24;
+    color: black;
+
+}
+
